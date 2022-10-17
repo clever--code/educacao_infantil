@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  app:
+    build: .
+    command: make start-dev-server
+    container_name: mv_passeios_pwa
+    volumes:
+      - .:/mv-passeios-pwa
+    ports:
+      - 8080:8080
