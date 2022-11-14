@@ -1,103 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+    <title><%= productName %></title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-  <title>Math Fun Game</title>
-  <style>
-    /* RESET */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    <meta charset="utf-8">
+    <meta name="description" content="<%= productDescription %>">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width<% if (ctx.mode.cordova || ctx.mode.capacitor) { %>, viewport-fit=cover<% } %>">
 
-    a {
-      text-decoration: none;
-      color: #EC4067;
-    }
+    <link rel="icon" type="image/png" sizes="128x128" href="icons/favicon-128x128.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="icon" type="image/ico" href="favicon.ico">
 
-    img {
-      max-width: 100%;
-    }
-
-    /* RESET */
-
-    .mt-0200 {
-      margin-top: 16px;
-    }
-
-    body {
-      font-family: 'Poppins', sans-serif;
-    }
-
-    .math__wrap {
-      max-width: 1200px;
-      margin: 60px auto;
-    }
-
-    .math__list {
-      display: flex;
-      gap: 32px;
-      margin-top: 32px;
-    }
-
-    .math__item {
-      display: flex;
-      gap: 8px;
-      padding: 16px;
-      border-radius: 8px;
-      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    }
-
-    .math__item-image {
-      max-width: 300px;
-      margin: 16px 0 0 0;
-    }
-
-    .math__item-title {
-      text-align: center;
-    }
-  </style>
-</head>
-
-<body>
-  <div class="math__wrap">
-    <h1>Educação Infantil por Voz</h1>
-    <h2 class="mt-0200">Escolha um jogo para aprender</h2>
-    <div class="math__list">
-      <div class="math__item">
-        <a href="games/01-math.html">
-          <h3 class="math__item-title">Matemática</h3>
-          <div class="math__item-image">
-            <img src="assets/img/math01.png" alt="Jogo de matemática">
-          </div>
-        </a>
-      </div>
-      <div class="math__item">
-        <a href="#">
-          <h3 class="math__item-title">Que Planeta é esse?</h3>
-          <div class="math__item-image">
-            <img src="assets/img/planeta01.webp" alt="Jogo dos planetas">
-          </div>
-        </a>
-      </div>
-      <div class="math__item">
-        <a href="#">
-          <h3 class="math__item-title">Que bandeira é esse?</h3>
-          <div class="math__item-image">
-            <img src="assets/img/bandeira.jpg" alt="Jogo das bandeiras">
-          </div>
-        </a>
-      </div>
-
-    </div>
-  </div>
-</body>
-
+    <script src="https://kit.fontawesome.com/0bd7d1039f.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@1.5.7/dist/lottie-player.js"></script>
+  </head>
+  <body>
+    <!-- quasar:entry-point -->
+  </body>
 </html>
